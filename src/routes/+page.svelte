@@ -1,6 +1,9 @@
 <script lang="ts">
 	function onKakaoLogin() {
 		// 카카오 로그인 버튼을 눌렀을 때 동작하는 함수
+		Kakao.Auth.authorize({
+			redirectUri: 'http://localhost:5173/oauth' // 카카오 로그인 후 리다이렉트 될 주소
+		});
 	}
 </script>
 
